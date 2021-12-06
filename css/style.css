@@ -1,0 +1,316 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Road Rage', cursive;
+    box-sizing: border-box;
+}
+html{
+ height: 100%;   
+}
+body{
+    min-height: 100%;
+    padding: 60px 0px 0px;
+}
+.container{
+    background-color: rgb(176, 212, 221);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap: 10px 10px;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "header"
+    "urban-style"
+    "novedades"
+    "destacados"
+    "footer";
+    width: 100%;
+    height: 100%;
+}
+.header{
+    grid-area: header;
+    background-color: rgb(43, 39, 39);
+    height: 120px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.urban-style{
+    grid-area: urban-style;
+}
+.novedades{
+    grid-area: novedades;
+}
+.destacados{
+    grid-area: destacados;
+}
+.footer{
+    grid-area: footer;
+    background-color: rgb(43, 39, 39) ;
+    color: white;
+}
+.logo{
+    color: white;
+    text-decoration: none;
+    font-size: 160px;
+    padding: 0px 10px;
+    line-height: 120px;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    max-width: 992px;
+    margin: 0 auto;
+}
+.nav__ul{
+    display: flex;
+    margin-right: 20px;
+    list-style: none;
+}
+.nav__li{
+    font-size: 33px;
+    margin: 0 15px;
+    line-height: 60px;
+    color: white;
+    text-transform: uppercase;
+    width: max-content;
+}
+.nav__li a{
+    color: white;
+    text-decoration: none;
+}
+.navbar{
+    color:white;
+    background: none;
+    border: none;
+    font-size: 100px;
+    padding: 0 20px;
+    line-height: 60px;
+    display: none;
+}
+.content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.h1{
+    padding: 100px 0px 50px;
+    color: rgb(43, 39, 39);
+    text-align: center;
+    font-size: 150px;
+}
+.h1__img{
+    width: 100%;
+    object-fit: contain;
+}
+.article{
+    border-radius: 30px;
+    margin: 20px;
+    background-color: rgb(43, 39, 39);
+    color: rgb(255, 255, 255);
+    padding: 30px 20px 30px;
+    text-align: center;
+    display: inline-block;
+}
+.article img{
+    border: none;
+    border-radius: 30px;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+.nov__p{
+    font-size: 25px;
+}
+.nov__buy{
+    color: rgb(43, 39, 39);
+    display: inline;
+    padding: 10px 20px;
+    margin-top: 30px;
+    margin-right: 15px;
+    border-radius: 7px;
+    background-color: rgb(176, 212, 221);
+    font-size: 25px;
+}
+.article i{
+    color: rgb(43, 39, 39);
+    margin-top: 30px;
+    border-radius: 10px;
+    padding: 14px 20px;
+    background-color: rgb(176, 212, 221);
+}
+.nov__ul{
+    text-align: center;
+
+}
+.h2{
+    margin: 200px 0px 50px;
+    color: rgb(43, 39, 39);
+    text-align: center;
+    font-size: 80px;
+}
+.nos{
+    padding: 100px 0px 60px;
+    color: rgb(43, 39, 39);
+    text-align: center;
+    font-size: 100px;
+}
+.nos__text{
+    color: rgb(43, 39, 39);
+    text-align: center;
+    font-size: 40px;
+}
+.h1-contact{
+    padding: 100px 0px 150px;
+    color: rgb(43, 39, 39);
+    text-align: center;
+    font-size: 100px;
+}
+/** UTILIZANDO FLEXBOX **/
+.flex-contact{
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    background: rgb(43, 39, 39);
+    margin: 50px 50px;
+    padding: 20px;
+    border: 15px solid rgb(176, 212, 221);
+    outline: 4px solid rgb(43, 39, 39);
+}
+.form{
+    text-align: center;
+    min-width: 400px;
+    flex: 1;
+    padding: 30px;
+}
+.form__input{
+    font-size: 20px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    padding: 7px;
+    margin: 7px 0px;
+    border: none;
+    border-bottom: 4px solid rgb(176, 212, 221);
+    background: transparent;
+}
+.form textarea{
+    min-height: 140px;
+    resize: none;
+}
+.foot__li{
+    list-style: none;
+    padding: 25px 0 15px;
+    margin-left: 15px;
+}
+.foot__li a{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+}
+.foot__ul{
+    display: flex;
+    flex-direction: column;
+}
+.dat__h3{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    padding: 25px 0 15px;
+    text-align: center;
+}
+.dat__li{
+    padding: 15px;
+    text-align: center;
+    display: block;
+}
+.dat__li a{
+    font-family: 'Montserrat', sans-serif;
+    padding: 4px;
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+}
+.dat__ul{
+display: flex;
+flex-direction: column;
+}
+.rrss__h3{
+    font-family: 'Montserrat', sans-serif;
+    margin-right: 20px;
+    font-size: 20px;
+    padding: 25px 0 15px;
+    text-align: right;
+}
+.rrss__li a{
+    color: white;
+}
+.rrss__ul{
+    padding-top: 10px;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+.h4{
+    border-top: 3px solid rgb(176, 212, 221);
+    border-bottom: 5px solid rgb(176, 212, 221);
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 50px;
+    padding: 8px;
+    text-align: center;
+}
+.menu-footer{
+    display: flex;
+    justify-content: space-between;
+}
+@media screen and (max-width: 768px){
+    body{
+        padding-top: 70px;
+    }
+    .header{
+        height: 120px;
+    }
+    .nav__ul{
+        flex-direction: column;
+        align-items: center;
+        margin-right: 20px;
+        background-color: rgb(74, 139, 172);
+        position: fixed;
+        left: 0;
+        top: 120px;
+        width: 100%;
+        padding: 20px 0;
+
+        height: calc(100% - 120px);
+        overflow-y: auto;
+        
+        left: 100%;
+        transition: left 0.3s;
+    }
+    .nav__li{
+        line-height: 90px;
+        
+    }
+    .navbar{
+        display: block;
+    }
+    .nav__ul_visible{
+        left: 0;
+    }
+    .container .urban-style{
+        grid-column: 1/-1;
+    }
+    .container .novedades{
+        grid-column: 1/-1;
+    }
+    .container .destacados{
+        grid-column: 1/-1;
+    }
+    .container .footer{
+        grid-column: 1/-1;
+    }
+}
