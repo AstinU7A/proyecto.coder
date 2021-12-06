@@ -105,6 +105,7 @@ body{
     object-fit: contain;
 }
 .article{
+    transition: all 0.2s ease;
     border-radius: 30px;
     margin: 20px;
     background-color: rgb(43, 39, 39);
@@ -112,6 +113,11 @@ body{
     padding: 30px 20px 30px;
     text-align: center;
     display: inline-block;
+    cursor: pointer;
+}
+.article:hover{
+    transform: scale(1.1);
+    box-shadow: 0.3rem 0.4rem 0.5rem rgba(46, 44, 44, 0.5);
 }
 .article img{
     border: none;
@@ -120,10 +126,14 @@ body{
     height: 200px;
     object-fit: cover;
 }
+.article img:hover{
+    box-shadow: 0.3rem 0.4rem 1rem rgba(0, 0, 0, 0.6);
+}
 .nov__p{
     font-size: 25px;
 }
 .nov__buy{
+    transition: .2s ease;
     color: rgb(43, 39, 39);
     display: inline;
     padding: 10px 20px;
@@ -133,12 +143,19 @@ body{
     background-color: rgb(176, 212, 221);
     font-size: 25px;
 }
+.nov__buy:hover{
+    background:  rgb(68, 129, 145);
+}
 .article i{
+    transition: .2s ease;
     color: rgb(43, 39, 39);
     margin-top: 30px;
     border-radius: 10px;
     padding: 14px 20px;
     background-color: rgb(176, 212, 221);
+}
+.article i:hover{
+    background:  rgb(68, 129, 145);
 }
 .nov__ul{
     text-align: center;
@@ -197,9 +214,34 @@ body{
     border-bottom: 4px solid rgb(176, 212, 221);
     background: transparent;
 }
+.form__input:focus{
+    background: linear-gradient(to bottom, transparent, rgb(69, 60, 60));
+    outline: none;
+    border-bottom: 4px solid rgb(50, 95, 106);
+}
 .form textarea{
     min-height: 140px;
     resize: none;
+}
+.form__input[type="submit"]{
+    background-color: rgb(176, 212, 221);
+    padding: 20px;
+    border-bottom: none;
+    color: rgb(43, 39, 39);
+    font-size: 25px;
+}
+.form__input[type="submit"]:hover{
+    background-color: rgb(68, 129, 145);
+    padding: 20px;
+    border-bottom: none;
+    color: rgb(43, 39, 39);
+    font-size: 25px
+}
+.form__input[type="submit"]:focus{
+background: rgb(176, 212, 221);
+}
+.form__input[type="submit"]:active{
+background: linear-gradient(to bottom, rgb(91, 194, 220), rgb(176, 212, 221) ) ;
 }
 .foot__li{
     list-style: none;
